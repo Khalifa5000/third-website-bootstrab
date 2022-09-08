@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 54px;
+    background-color: rgb(125, 126, 126); 
+}
+a{
+    text-decoration: none;
+}
+.navbar {
+    padding-top: 0 ;
+    padding-bottom:0 ;   
+}
+.nav-link:hover{
+background-color: rgb(29, 88, 177);
+}
+.nav-link{
+    font-size: 20px;
+    margin: 4px;
+}
+.navbar-brand {
+    font-size: x-large;
+    margin: 0  8px;
+    transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 15px white,
+                -10px -10px 15px white;
+}
+.dropdown-menu li a{
+  font-weight: 600;
+}
+.carousel-caption{
+    background-color: rgb(110, 109, 109, 0.3);
+}
+.copy-btn{
+    position: relative;
+    top:10px;
+    left: 30px;
+}
+.copy-btn::before{
+position: absolute;
+content: "";
+border-width: 10px;
+border-style:solid;
+border-color: transparent transparent lightblue ;
+top: 20px;
+left: 13px;
+display: none;
+}
+.copy-btn::after{
+position: absolute;
+content: " ";
+height: 40px;
+width: 80px;
+background-color: lightblue;
+top: 40px;
+left: -15px;
+border-radius: 5px;
+display: none;
+}
+.copy-btn:active::before,
+.btn:hover::before{
+    display: block;
+}
+.copy-btn:hover::after{
+    content: "copy to clipboard";
+    display: block;
+}
+.copy-btn:active::after{
+    content: "copied";
+    display: block;
+    height: 25px;
+}
+.img-1 , .img-2{
+    height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.img-1{
+    background-image: url(../images/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers.jpg);
+}
+.img-2{
+    background-image: url(../images/istockphoto-1356933529-170667a.jpg);
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.link-icon{
+    display: block;
+}
+
